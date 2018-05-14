@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const ButtonDanger = ({ text, handleClick }) => (
   <button
-    className='button button--danger'
+    className="button button--danger"
     onClick={handleClick}
   >
     {text}
