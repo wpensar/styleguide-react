@@ -1,0 +1,47 @@
+$button-font-size: 1em
+$button-height: 32px
+$button-color: #495057
+$button-padding: 0 16px
+$button-border: 0
+$button-border-radius: 3px
+$button-background-color: #F1F3F5
+$button--hover-background-color: #DEE2E6
+
+$white: #fff
+$primary-color: #1C7CD6
+$primary-color--hover: #1862AB
+$danger-color: #FA5252
+$danger-color--hover: #D94646
+
+.button
+  color: $button-color
+  background-color: $button-background-color
+  height: $button-height
+  padding: $button-padding
+  font-size: $button-font-size
+  border: $button-border
+  border-radius: $button-border-radius
+  cursor: pointer
+  &:hover
+    background-color: $button--hover-background-color
+  &--primary
+    color: $white
+    background-color: $primary-color
+    box-shadow: 0 2px 2px rgba(18, 73, 128, 0.25)
+    &:hover
+      background-color: $primary-color--hover
+  &--link
+    background-color: transparent
+    color: $primary-color
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+      background-color: transparent
+  &--sutil
+    background-color: transparent
+  &--danger
+    color: $white
+    background-color: $danger-color
+    &:hover
+      background-color: $danger-color--hover
+
